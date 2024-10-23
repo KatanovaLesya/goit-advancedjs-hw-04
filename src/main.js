@@ -49,7 +49,7 @@ form.addEventListener('submit', async (event) => {
   }
   currentPage = 1; // Скинути номер сторінки
   totalImagesLoaded = 0; // Скинути кількість завантажених зображень
-  galleryContainer.innerHTML = ''; // Очищення попередніх результатів
+  galleryContainer.innerHTML = ''; // Очищення попередніх результатів при новому пошуку
   loadMoreButton.style.display = 'none'; // Приховати кнопку "Load more"
   await loadImages(); // Завантаження першої сторінки
 });
