@@ -14,11 +14,10 @@ function createImageCard({ webformatURL, largeImageURL, tags, likes, views, comm
     `;
 }
 
-// Функція для відображення галереї
 export function renderGallery(images) {
   const galleryContainer = document.querySelector('.gallery');
-  galleryContainer.innerHTML = ''; // Очищення галереї
 
+  // Додати нові зображення до існуючої галереї
   const galleryMarkup = images.map(createImageCard).join('');
-  galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
+  galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup); // Додавання в кінець існуючої галереї
 }
